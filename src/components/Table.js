@@ -1,4 +1,5 @@
 import React from 'react'
+import Table from'';
 
 const TableHeader = () => {
   // boilerplate table header functional component
@@ -36,7 +37,21 @@ const TableBody = (props) => {
 const Table = (props) => {
   {
     /*TODO - return <table> component, TableHeader and TableBody  and pass props!*/
+    const { linkData, removeLink } = props;
+    return (
+      <table>
+           <TableHeader />
+            <TableBody linkData={linkData} removeLink={removeLink} />
+        </table>
+      )
+      
   }
+  
+
 }
 
 export default Table
+/* <div>
+      {TableHeader()}
+      {TableBody(props)}
+      </div> */
