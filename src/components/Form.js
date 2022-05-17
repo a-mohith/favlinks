@@ -9,7 +9,7 @@ class Form extends Component {
             TODO - set initial state for link name and URL 
         */
     this.state ={
-      name:'',
+      linkName:'',
       URL:''
     }
           
