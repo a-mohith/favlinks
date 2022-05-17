@@ -10,7 +10,7 @@ class Form extends Component {
         */
     this.state ={
       linkName:'',
-      URL:''
+      url:''
     }
           
   }
@@ -35,8 +35,8 @@ class Form extends Component {
         */
     this.props.handleSubmit(this.state)
     this.setState({
-      name: '',
-      URL: ''
+      linkName: '',
+      url: ''
     })
   }
 
@@ -48,7 +48,7 @@ class Form extends Component {
         <input type="text" id= "name" name= "name" value= {this.state.name} onChange= {(event) =>this.handleChange(event)} />
         <label for= "url"> URL: </label>
         <input type="text" id="url" name= "URL" value= {this.state.URL} onChange= {this.handleChange} />
-        <input type= "submit" value= "Submit" onClick={this.onFormSubmit} />
+        <input type= "submit" value= "Submit" onClick= {this.onFormSubmit} />
       </form>
     )
   }

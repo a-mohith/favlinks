@@ -17,7 +17,7 @@ class LinkContainer extends React.Component {
             TODO - Create logic for setting the state to filter array and remove favLink at index
         */
     this.setState((state) => ({
-      favLinks: state.removeLink.splice([index ])
+      favLinks: state.handleRemove.splice([index ])
     }))
   }
 
@@ -26,7 +26,7 @@ class LinkContainer extends React.Component {
             TODO - Create logic to setState and add new favLink to favLinks array in state
         */
     this.setState((state) => ({
-      favLinks: state.favLinks.concat([favLink])
+      favLinks: state.favLinks.handleSubmit([favLink])
   })) 
     
   }

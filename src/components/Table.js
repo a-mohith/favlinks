@@ -1,5 +1,4 @@
 import React from 'react'
-//import Table from'';
 
 const TableHeader = () => {
   // boilerplate table header functional component
@@ -51,7 +50,3 @@ const Table = (props) => {
 }
 
 export default Table
-/* <div>
-      {TableHeader()}
-      {TableBody(props)}
-      </div> */
